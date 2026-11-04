@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #0A0D18;
+    color: #F8FAFC;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom scrollbar for sleek modern arcade feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0D18;
+}
+::-webkit-scrollbar-thumb {
+  background: #232C4F;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #354378;
+}
+
+/* Prevent touch delay and accidental zoom on interactive buttons in mobile gameplay */
+.touch-control-button {
+  touch-action: manipulation;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Arcade glow borders and buttons */
+.arcade-glow-card {
+  position: relative;
+  background: linear-gradient(180deg, rgba(27, 34, 60, 0.7) 0%, rgba(18, 23, 41, 0.9) 100%);
+  border: 1px solid rgba(53, 67, 120, 0.4);
+  backdrop-filter: blur(12px);
+  transition: all 0.25s ease-in-out;
+}
+
+.arcade-glow-card:hover {
+  border-color: rgba(139, 92, 246, 0.6);
+  box-shadow: 0 8px 30px -4px rgba(139, 92, 246, 0.2);
+}
+
+.arcade-border-gradient {
+  background: linear-gradient(135deg, #06B6D4 0%, #8B5CF6 50%, #EC4899 100%);
+}

@@ -1,0 +1,6 @@
+# robots.txt for Mirthloop Arcade
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://mirthloop.pages.dev/sitemap.xml

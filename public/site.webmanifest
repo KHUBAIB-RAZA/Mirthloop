@@ -1,0 +1,17 @@
+{
+  "name": "Mirthloop Arcade",
+  "short_name": "Mirthloop",
+  "description": "Modern lightweight browser arcade games for everyone",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0D18",
+  "theme_color": "#8B5CF6",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
