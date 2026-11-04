@@ -27,7 +27,7 @@ The architecture is completely modular, enabling new arcade titles to be integra
 | **Framework** | React 19 + TypeScript | Type-safe UI components and reactive state |
 | **Build Tool** | Vite 6 | Lightning-fast development & optimized production rollup |
 | **Styling** | Tailwind CSS 3 | Modern dark arcade theme with custom glowing gradients |
-| **Routing** | React Router 7 | Client-side SPA routing with Cloudflare fallback (`_redirects`) |
+| **Routing** | React Router 7 | Client-side SPA routing with Cloudflare fallback (`200.html`) |
 | **Game Engine** | HTML5 Canvas 2D | High-DPI hardware accelerated 60FPS physics loop |
 | **Audio** | Web Audio API | Native synthesizer oscillators for pickups and collisions |
 | **Icons** | Lucide React | Clean, scalable vector icons |
@@ -187,7 +187,7 @@ npx wrangler pages deploy dist --project-name mirthloop
 
 ### SPA Routing & Security Headers
 The repository already includes:
-- `public/_redirects`: `/* /index.html 200` to ensure direct page refreshes work on all routes.
+- **Native SPA Fallback (`200.html` & `404.html`):** Automatically generated from `index.html` on build via `vite.config.ts`. Cloudflare Pages natively serves `200.html` with HTTP 200 for all client-side routes, preventing the `code: 100324` redirect loop error.
 - `public/_headers`: Enforces `X-Content-Type-Options: nosniff`, `X-Frame-Options: SAMEORIGIN`, and strict referrer/permission policies.
 
 ---
