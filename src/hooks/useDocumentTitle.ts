@@ -21,7 +21,7 @@ export function useDocumentTitle({ title, description, canonical }: SEOProps) {
 
     // Canonical link
     let linkCanonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
-    const currentUrl = canonical || (window.location.origin + window.location.pathname);
+    const currentUrl = canonical || new URL(window.location.pathname, siteConfig.url).toString();
     if (!linkCanonical) {
       linkCanonical = document.createElement('link');
       linkCanonical.setAttribute('rel', 'canonical');

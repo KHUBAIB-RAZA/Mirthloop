@@ -33,7 +33,7 @@ export const TermsPage: React.FC = () => {
             <span>1. Agreement to Terms</span>
           </h2>
           <p>
-            By accessing or playing games on Mirthloop (located at https://mirthloop.pages.dev and its associated domains), you agree to be bound by these Terms and Conditions and all applicable local, national, and international laws. If you disagree with any portion of these terms, you are prohibited from using the platform.
+            By accessing or playing games on Mirthloop (located at {siteConfig.url} and its associated domains), you agree to be bound by these Terms and Conditions and all applicable local, national, and international laws. If you disagree with any portion of these terms, you are prohibited from using the platform.
           </p>
         </section>
 

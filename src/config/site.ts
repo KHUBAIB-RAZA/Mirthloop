@@ -4,7 +4,7 @@ export const siteConfig = {
   name: 'Mirthloop',
   tagline: 'Lightweight Online Arcade Games',
   description: 'Play Arrow Dash and original lightweight browser arcade games for free on desktop, mobile, and tablet. Instant gameplay, responsive controls, zero downloads.',
-  url: 'https://mirthloop.pages.dev',
+  url: 'https://mirthloop.khubaibraza-kh80.workers.dev',
   author: 'Mirthloop Team',
   contactEmail: 'contact@mirthloop.com', // Explicit contact address
   socials: {
